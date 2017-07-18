@@ -1,0 +1,7 @@
+<form method="post">
+	<p> Ajout d'un nouveau fournisseur dans la base de données </p>
+	{% csrf_token %}
+    	{{ form.as_p}}
+	<input type="submit" value="Ajouter" />
+</form>
+<p><a href=.>Retour à l'accueil</a>

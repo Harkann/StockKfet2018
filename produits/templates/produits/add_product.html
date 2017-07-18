@@ -1,0 +1,8 @@
+<form method="post">
+	<p> Ajout d'un nouveau produit dans la base de données </p>
+	{% csrf_token %}
+    	{{ form.as_p}}
+	<p> Si le fournisseur n'apparait pas dans la liste ajoutez le <a href="add_fournisseur.html">ici</a> </p>
+	<input type="submit" value="Ajouter" />
+</form>
+<p><a href=.>Retour à l'accueil</a>

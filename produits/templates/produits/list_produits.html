@@ -1,0 +1,4 @@
+{% for item in produits %}
+<p> * {{item.fournisseur}} {{ item.nom }} -- en stock : {{item.quantite}}/{{item.seuil_commande}}
+{% endfor %}
+<p><a href=.>Retour à l'accueil</a>

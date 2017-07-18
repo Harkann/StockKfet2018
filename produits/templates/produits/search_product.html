@@ -1,0 +1,12 @@
+<form type="get" action="./edit" style="margin: 0">
+	<input  id="search_box" type="text" name="search_box"  placeholder="Rechercher un produit ..." >
+	<button id="search_submit" type="submit" >Submit</button>
+</form>
+{% if is_search %}
+<form method="post">
+	{%csrf_token %}
+	{{ form.as_p}}
+	<input type="submit" value="Éditer" />
+</form>
+{% endif %}
+<p><a href=.>Retour à l'accueil</a>
